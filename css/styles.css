@@ -1,15 +1,13 @@
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Nunito', sans-serif;
-    font-size: 20px;
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+	font-family: 'Nunito', sans-serif;
+	font-size: 20px;
 }
 
 body {
 	background-color: rgb(95, 139, 139);
-	display: flex;
-	flex-direction: column;
 	min-height: 100vh;
 }
 
@@ -17,56 +15,56 @@ main {
 	padding: 10px;
 }
 
-.header{
-    background-color: #2d5363;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 85px;
-    padding: 5px 10%;
+.header {
+	background-color: #2d5363;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	height: 85px;
+	padding: 5px 10%;
 }
 
-.header .logo img{
-    height: 45px;
-    width: auto;
-    transition: all 0.3s;
+.header .logo img {
+	height: 45px;
+	width: auto;
+	transition: all 0.3s;
 }
 
-.header .logo img:hover{
-    transform: rotate(45deg);
+.header .logo img:hover {
+	transform: rotate(45deg);
 }
 
-.header .nav-links{
-    list-style: none;
+.header .nav-links {
+	list-style: none;
 }
 
-.header .nav-links li{
-    display: inline-block;
-    padding: 0 25px;    
+.header .nav-links li {
+	display: inline-block;
+	padding: 0 25px;
 }
 
-.header .nav-links li:hover{
-    transform: scale(1.1);
+.header .nav-links li:hover {
+	transform: scale(1.1);
 }
 
-.header .nav-links a{
-    font-size: 700;
-    color: #eceff1;
-    text-decoration: none;    
+.header .nav-links a {
+	font-size: 700;
+	color: #eceff1;
+	text-decoration: none;
 }
 
-.header .nav-links li a:hover{
-    color: #4c8fac;
+.header .nav-links li a:hover {
+	color: #4c8fac;
 }
 
 /* propiedades de footer */
 footer {
-    background-color: #2d5363;
+	background-color: #2d5363;
 	bottom: 0;
 	left: 0;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
-    color: #eceff1;
+	color: #eceff1;
 	margin-top: auto;
 }
