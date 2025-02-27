@@ -62,9 +62,19 @@ footer {
 	background-color: #2d5363;
 	bottom: 0;
 	left: 0;
+	position: fixed;
+	width: 100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
 	color: #eceff1;
 	margin-top: auto;
+}
+
+.boldtext {
+	font-weight: bold;
+}
+
+.graytext {
+	color: #999999;
 }
