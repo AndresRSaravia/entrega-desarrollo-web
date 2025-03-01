@@ -7,7 +7,7 @@
 }
 
 body {
-	background-color: rgb(95, 139, 139);
+	background-color: #5F8B8B;
 	min-height: 100vh;
 }
 
@@ -15,19 +15,83 @@ main {
 	padding: 10px;
 }
 
-.site {
-	min-height: 100dvh;
-	display: grid;
-	grid-template-rows: auto 1fr auto;
-	grid-template-columns: nimmax(0,1fr);
+.header {
+    height: 80px;
+    background-color: #2d5363;
 }
 
+.header .logo img {
+	height: 45px;
+	width: auto;
+	transition: all 0.3s;
+}
+
+.header .logo img:hover {
+	transform: rotate(45deg);
+}
+
+.header .navbar {
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0 2rem;
+}
+
+.header .navbar .menu{
+    display: none;
+	z-index: 999;
+}
+
+.header .navbar .menu:checked + .ul_links {
+    height: calc(100vh - 150px);
+	z-index: 999;
+}
+
+.header .navbar .logo {
+    color: #fff;
+}
+
+.header .navbar .label_icon {
+}
+
+.header .navbar .list_icon {
+    color: #fff;
+    cursor: pointer;
+}
+
+.ul_links {
+    width: 100%;
+    background-color: #2d5363;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    height: 0;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    transition: all .3s;
+    list-style: none;
+}
+
+.link {
+    font-size: 3em;
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+/*
 .header {
+	height: 85px;
 	background-color: #2d5363;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
-	height: 85px;
 	padding: 5px 10%;
 }
 
@@ -63,6 +127,7 @@ main {
 .header .nav-links li a:hover {
 	color: #4c8fac;
 }
+*/
 
 /* propiedades de footer */
 footer {
@@ -83,4 +148,32 @@ footer {
 
 .graytext {
 	color: #999999;
+}
+
+.site {
+	min-height: 100dvh;
+	display: grid;
+	grid-template-rows: auto 1fr auto;
+	grid-template-columns: nimmax(0,1fr);
+}
+
+@media (min-width:982px){
+    .label_icon {
+        display: none;
+    }
+    .ul_links{
+        position: static;
+        width: auto;
+        height: auto;
+        flex-direction: row;
+        gap: 2rem;
+    }
+    .link{
+        font-size: 1.2rem;
+        transition: all .3s;
+        padding: .2rem .7rem;
+    }
+    .link:hover{
+        background-color: #2d5363;
+    }
 }
