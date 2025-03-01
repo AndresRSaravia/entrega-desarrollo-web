@@ -1,9 +1,9 @@
+/* propiedades generales*/
 * {
 	box-sizing: border-box;
 	margin: 0;
 	padding: 0;
 	font-family: 'Nunito', sans-serif;
-	font-size: 20px;
 }
 
 body {
@@ -15,74 +15,66 @@ main {
 	padding: 10px;
 }
 
+/* propiedades del header y navbar */
 .header {
-    height: 80px;
-    background-color: #2d5363;
+	height: 80px;
+	background-color: #2d5363;
+	font-size: 10px;
 }
-
 .header .logo img {
 	height: 45px;
 	width: auto;
 	transition: all 0.3s;
 }
-
 .header .logo img:hover {
 	transform: rotate(45deg);
 }
-
 .header .navbar {
-    height: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-wrap: wrap;
-    padding: 0 2rem;
+	height: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 0 2rem;
 }
-
 .header .navbar .menu{
-    display: none;
+	display: none;
 	z-index: 999;
 }
-
 .header .navbar .menu:checked + .ul_links {
-    height: calc(100vh - 150px);
+	height: calc(100vh - 150px);
 	z-index: 999;
 }
-
 .header .navbar .logo {
-    color: #fff;
+	color: #fff;
 }
-
-.header .navbar .label_icon {
-}
-
 .header .navbar .list_icon {
-    color: #fff;
-    cursor: pointer;
+	color: #fff;
+	cursor: pointer;
 }
 
 .ul_links {
-    width: 100%;
-    background-color: #2d5363;
-    position: absolute;
-    top: 80px;
-    left: 0;
-    height: 0;
-    overflow: hidden;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 3rem;
-    transition: all .3s;
-    list-style: none;
+	width: 100%;
+	background-color: #2d5363;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	height: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	transition: all .3s;
+	list-style: none;
 }
 
 .link {
-    font-size: 3em;
-    color: #fff;
-    font-weight: bold;
-    text-decoration: none;
+	font-size: 3em;
+	color: #fff;
+	font-weight: bold;
+	text-decoration: none;
 }
 
 /*
@@ -157,23 +149,24 @@ footer {
 	grid-template-columns: nimmax(0,1fr);
 }
 
+/* propiedades en mobile */
 @media (min-width:982px){
-    .label_icon {
-        display: none;
-    }
-    .ul_links{
-        position: static;
-        width: auto;
-        height: auto;
-        flex-direction: row;
-        gap: 2rem;
-    }
-    .link{
-        font-size: 1.2rem;
-        transition: all .3s;
-        padding: .2rem .7rem;
-    }
-    .link:hover{
-        background-color: #2d5363;
-    }
+	.label_icon {
+		display: none;
+	}
+	.ul_links{
+		position: static;
+		width: auto;
+		height: auto;
+		flex-direction: row;
+		gap: 2rem;
+	}
+	.link{
+		font-size: 1.2rem;
+		transition: all .3s;
+		padding: .2rem .7rem;
+	}
+	.link:hover{
+		background-color: #2d5363;
+	}
 }
