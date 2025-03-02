@@ -15,6 +15,13 @@ main {
   padding: 10px;
 }
 
+.site {
+  min-height: 100dvh;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  grid-template-columns: nimmax(0, 1fr);
+}
+
 /* propiedades del header y navbar */
 .header {
   height: 80px;
@@ -93,13 +100,6 @@ footer {
 
 .graytext {
   color: #999999;
-}
-
-.site {
-  min-height: 100dvh;
-  display: grid;
-  grid-template-rows: auto 1fr auto;
-  grid-template-columns: nimmax(0, 1fr);
 }
 
 /* propiedades en mobile */
