@@ -22,6 +22,14 @@ main {
   grid-template-columns: nimmax(0, 1fr);
 }
 
+.boldtext {
+  font-weight: bold;
+}
+
+.graytext {
+  color: #999999;
+}
+
 /* propiedades del header y navbar */
 .header {
   height: 80px;
@@ -94,14 +102,6 @@ footer {
   margin-top: auto;
 }
 
-.boldtext {
-  font-weight: bold;
-}
-
-.graytext {
-  color: #999999;
-}
-
 /* propiedades en mobile */
 @media (min-width: 982px) {
   .label_icon {
@@ -109,8 +109,8 @@ footer {
   }
   .ul_links {
     position: static;
-    width: auto;
     height: auto;
+    width: auto;
     flex-direction: row;
     gap: 2rem;
   }

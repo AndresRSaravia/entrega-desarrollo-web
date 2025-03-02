@@ -1,13 +1,17 @@
 @use "colors";
 
+@mixin height-width($height,$width) {
+	height: $height;
+	width: $width;
+}
+
 @media (min-width:982px){
 	.label_icon {
 		display: none;
 	}
 	.ul_links{
 		position: static;
-		width: auto;
-		height: auto;
+		@include height-width(auto,auto);
 		flex-direction: row;
 		gap: 2rem;
 	}

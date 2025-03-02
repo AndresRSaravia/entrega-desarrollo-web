@@ -22,3 +22,11 @@ main {
 	grid-template-rows: auto 1fr auto;
 	grid-template-columns: nimmax(0,1fr);
 }
+
+.boldtext {
+	font-weight: bold;
+}
+
+.graytext {
+	color: colors.$gray-color;
+}
