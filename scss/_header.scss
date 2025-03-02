@@ -1,6 +1,8 @@
+@use "colors";
+
 .header {
 	height: 80px;
-	background-color: $secondary-color;
+	background-color: colors.$secondary-color;
 	font-size: 10px;
 	.logo img {
 		height: 45px;
@@ -26,7 +28,7 @@
 			z-index: 999;
 		}
 		.list_icon {
-			color: $white-color;
+			color: colors.$white-color;
 			cursor: pointer;
 		}
 	}
@@ -34,7 +36,7 @@
 
 .ul_links {
 	width: 100%;
-	background-color: $secondary-color;
+	background-color: colors.$secondary-color;
 	position: absolute;
 	top: 80px;
 	left: 0;
@@ -51,7 +53,7 @@
 
 .link {
 	font-size: 3em;
-	color: $white-color;
+	color: colors.$white-color;
 	font-weight: bold;
 	text-decoration: none;
 }
