@@ -1,5 +1,4 @@
-$primary-color: #5F8B8B;
-$secondary-color: #2d5363;
+@import "colors";
 
 /* propiedades generales*/
 * {
@@ -46,13 +45,8 @@ main {
 			height: calc(100vh - 150px);
 			z-index: 999;
 		}
-		.logo {
-			color: #fff;
-		}
-		.label_icon {
-		}
 		.list_icon {
-			color: #fff;
+			color: $white-color;
 			cursor: pointer;
 		}
 	}
@@ -77,7 +71,7 @@ main {
 
 .link {
 	font-size: 3em;
-	color: #fff;
+	color: $white-color;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -92,7 +86,7 @@ footer {
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
-	color: #eceff1;
+	color: $white-color;
 	margin-top: auto;
 }
 
@@ -101,7 +95,7 @@ footer {
 }
 
 .graytext {
-	color: #999999;
+	color: $gray-color;
 }
 
 .site {
