@@ -1,0 +1,57 @@
+.header {
+	height: 80px;
+	background-color: $secondary-color;
+	font-size: 10px;
+	.logo img {
+		height: 45px;
+		width: auto;
+		transition: all 0.3s;
+	}
+	.logo img:hover {
+		transform: rotate(45deg);
+	}
+	.navbar {
+		height: 100%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		flex-wrap: wrap;
+		padding: 0 2rem;
+		.menu{
+			display: none;
+			z-index: 999;
+		}
+		.menu:checked + .ul_links {
+			height: calc(100vh - 150px);
+			z-index: 999;
+		}
+		.list_icon {
+			color: $white-color;
+			cursor: pointer;
+		}
+	}
+}
+
+.ul_links {
+	width: 100%;
+	background-color: $secondary-color;
+	position: absolute;
+	top: 80px;
+	left: 0;
+	height: 0;
+	overflow: hidden;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 3rem;
+	transition: all .3s;
+	list-style: none;
+}
+
+.link {
+	font-size: 3em;
+	color: $white-color;
+	font-weight: bold;
+	text-decoration: none;
+}
