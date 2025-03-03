@@ -9,6 +9,7 @@
 body {
   background-color: #5F8B8B;
   min-height: 100vh;
+  font-size: 20px;
 }
 
 main {
@@ -100,6 +101,7 @@ footer {
   text-align: center;
   color: #ffffff;
   margin-top: auto;
+  font-size: 20px;
 }
 
 /* propiedades en mobile */
