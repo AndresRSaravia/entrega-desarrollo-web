@@ -5,22 +5,22 @@
 	width: $width;
 }
 
-@media (min-width:982px){
+@media (min-width:982px) {
 	.label_icon {
 		display: none;
 	}
-	.ul_links{
+	.ul_links {
 		position: static;
 		@include height-width(auto,auto);
 		flex-direction: row;
 		gap: 2rem;
 	}
-	.link{
+	.link {
 		font-size: 1.2rem;
 		transition: all .3s;
 		padding: .2rem .7rem;
 	}
-	.link:hover{
-		background-color: colors.$secondary-color;
+	.link:hover {
+		background-color: colors.$secondary;
 	}
 }

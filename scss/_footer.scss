@@ -1,14 +1,14 @@
 @use "colors";
 
 footer {
-	background-color: colors.$secondary-color;
+	background-color: colors.$secondary;
 	bottom: 0;
 	left: 0;
 	width: 100%;
 	padding-top: 5px;
 	padding-bottom: 5px;
 	text-align: center;
-	color: colors.$white-color;
+	color: colors.$white;
 	margin-top: auto;
 	font-size: 20px;
 }

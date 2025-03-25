@@ -8,7 +8,7 @@
 }
 
 body {
-	background-color: colors.$primary-color;
+	background-color: colors.$primary;
 	min-height: 100vh;
 	font-size: 20px;
 }
@@ -24,10 +24,14 @@ main {
 	grid-template-columns: nimmax(0,1fr);
 }
 
+.centered {
+	text-align: center;
+}
+
 .boldtext {
 	font-weight: bold;
 }
 
 .graytext {
-	color: colors.$gray-color;
+	color: colors.$gray;
 }

@@ -2,7 +2,7 @@
 
 .header {
 	height: 80px;
-	background-color: colors.$secondary-color;
+	background-color: colors.$secondary;
 	font-size: 10px;
 	.logo img {
 		height: 45px;
@@ -19,7 +19,7 @@
 		align-items: center;
 		flex-wrap: wrap;
 		padding: 0 2rem;
-		.menu{
+		.menu {
 			display: none;
 			z-index: 999;
 		}
@@ -28,7 +28,7 @@
 			z-index: 999;
 		}
 		.list_icon {
-			color: colors.$white-color;
+			color: colors.$white;
 			cursor: pointer;
 		}
 	}
@@ -36,7 +36,7 @@
 
 .ul_links {
 	width: 100%;
-	background-color: colors.$secondary-color;
+	background-color: colors.$secondary;
 	position: absolute;
 	top: 80px;
 	left: 0;
@@ -53,7 +53,7 @@
 
 .link {
 	font-size: 3em;
-	color: colors.$white-color;
+	color: colors.$white;
 	font-weight: bold;
 	text-decoration: none;
 }
