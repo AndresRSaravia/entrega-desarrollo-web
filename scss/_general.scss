@@ -17,6 +17,10 @@ main {
 	padding: 10px;
 }
 
+h1.hidden {
+	display: none;
+}
+
 .site {
 	min-height: 100dvh;
 	display: grid;
